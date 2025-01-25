@@ -33,7 +33,7 @@ convertBtn.addEventListener('click', async () => {
     formData.append('pdf', selectedFile);
 
     try {
-        const response = await fetch('http://localhost:5000/convert', {
+        const response = await fetch('https://pdf-to-doc-backend.onrender.com/convert', {
             method: 'POST',
             body: formData
         });
